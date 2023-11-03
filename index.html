@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="shortcut icon" href="img/favicons/rick-y-morty.ico" type="image/x-icon">
+ <link rel="shortcut icon" href="img/favicons/rick-y-morty.png">
+
+ <link rel="stylesheet" href="css/main.css">
+
+ <title>Rick y Morty</title>
+
+</head>
+
+<body>
+
+ <header class="header">
+  <div class="container">
+   <img class="logo" src="img/logo.png" alt="Rick y Morty">
+  </div>
+ </header>
+
+ <main class="main">
+  <div class="container">
+   <div id="interfaz" class="interfaz">
+    <div class="bg-search" id="bg-search">
+     <div class="searchContainer" id="searchContainer">
+      <input class="searchInput" id="searchInput" type="text" placeholder="Ingresa el nombre y presiona Enter">
+      <span class="searchIcon" id="searchIcon">🔍</span>
+     </div>
+
+     <button id="resetButton">Ver Todos</button>
+
+     <div class="error-search" id="error-search">
+      Rick y Morty
+     </div>
+    </div>
+
+    <div id="results" class="results">
+    </div>
+   </div>
+  </div>
+ </main>
+
+ <!-- Modal de carga -->
+ <div class="loadingModal" id="loadingModal">
+  <div id="loadingModalText" class="loadingModalText">
+   <div><img src="img/oval.svg" alt="Cargando..."></div>
+   <div>Cargando...</div>
+   <div id="error-message" class="error-message"></div>
+  </div>
+ </div>
+
+ <!-- Scroll Top Button -->
+ <a href="#" class="scroll-top-btn hidden"><i class="arrow up"></i></a>
+
+
+
+ <script src="./js/main.js"></script>
+
+ <script src="./js/scroll-top-btn.js"></script>
+
+</body>
+
+</html>
